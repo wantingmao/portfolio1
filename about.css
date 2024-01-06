@@ -1,0 +1,137 @@
+header {
+    background-color: #fff;
+    color: #214ED3;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    background-color: #fff8f5;
+}
+
+header .navbar a.active{
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: #214ED3;
+    background-color: #fff8f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.aboutme-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 20vw 0px 20vw;
+}
+
+.aboutme {
+    max-width: 55%; /* Adjust the width as needed */
+    padding: 0px 10px 0px 0px;
+}
+
+.profilepic {
+    max-width: 40%;
+    max-height: 60%;
+}
+
+.profilepic img {
+    width: 100%;
+    display: block; /* Prevents bottom margin issue */
+    margin: 20px 0px 0 0;
+    padding: 0px 0px 0 0;
+    max-height: 100%;
+    border-radius: 13px;
+}
+
+h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 10px 20vw 0 20vw;
+}
+h2 {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0px 20vw 0px 20vw;
+    
+}
+
+h3 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 0px 0px 20vw;
+    line-height: 0.5;
+    
+}
+
+p {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 0px;
+}
+
+ul.disc {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 5px 20vw 10px 22vw;
+    margin: 10px 0px 0px 0px;
+}
+
+ul.circle {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 5vw;
+    margin: 0px 0px 10px 0px;
+}
+
+.hobbies img{
+    display: block;
+    position: relative;
+    max-width: 60%; /* Set to 100% for responsiveness */
+    margin: auto; /* Center the image horizontally */
+    padding: 15px 20vw 0px 20vw;
+    border-radius: 13px;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px 30px 0px;
+}
+
+.contact-links a {
+    color: #214ED3;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+.contact-links a:hover{
+    color: #ff0000; /* Change to your desired link color on hover */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}

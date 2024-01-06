@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="100tray.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100&family=Playfair+Display&display=swap:wght@100;200;300;400;500;600"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="navigation.css">
+    <title>Food Tray Redesign</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="progress-line"></div>
+        <div class="progress-circle"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="active">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1>Food Tray Redesign</h1>
+    </div>
+    <div class="instagram-section">
+            <a href="https://www.instagram.com/aproduct.aday/" target="_blank" class="instagram-link">
+                <img src="igicon.png" alt="Instagram Icon" class="instagram-icon">
+                @aproduct.aday
+            </a>
+        </div>
+    <div class="mainimg-container">
+        <br>
+    <div class="img">
+        <img src="100/traythumbnail.png" alt="Food Tray Redesign Thumbnail">
+    </div>
+    <br>
+   
+</div>
+    <script src="script.js"></script>
+    <div class="process">
+        <p>
+            <h3>Plastic Condiment Packets</h3>
+            <div class="otherimgs">
+                <img src="100/packets.png" alt="Condiment Packets">
+            </div>
+             <ul class="disc" type="disc">
+            <li>855 billion single-use plastic condiment packets are 
+                trashed globally every year.</li>
+            <li>They cannot be recycled, therefore all end up in landfills</li>
+            <li>They take centuries to fully degrade</li>
+            <li>Every stage of plastic packet production generates 
+                greenhouse gas emissions</li>
+        </ul>
+        <h3>Brainstorming Questions</h3>
+        <ul class="disc" type="disc">
+            <li><i><b>Where</b> and <b>why</b> do people use condiment packets?</i></li>
+            <li><i>What <b>aspect</b> of this issue should I <b>focus</b> on?</i></li>
+            <li><i>What can I create to <b>reduce</b> the use and waste?</i></li>
+        </ul>
+        </p>
+        <p>
+        <h3>Ideation</h3>
+        <ul class="disc" type="disc">
+            <li>Changing the original food tray design to have a <b>built-in 
+                condiment container</b></li>
+        </ul>
+        <div class="otherimgs">
+            <img src="100/trayidea.png" alt="Tray Sketch">
+        </div>
+        <ul class="disc" type="disc">
+            <li>Keeps condiments and food <b>separate</b></li>
+            <li>Encourages customers to use <b>refillable condiment dispensers</b> 
+                rather than grabbing plastic condiment packets</li>
+            <li>Allows for <b>4</b> different condiments on one tray</li>
+        </ul>
+        <h3>Production Template Mockup</h3>
+        <div class="otherimgs">
+                <img src="100/template.jpg" alt="Production Template Mockup">
+        </div>
+        <h3>Single Tray Zoomed In + Dimension Ratios</h3>
+        <div class="otherimgs">
+                <img src="100/templatezoom.jpg" alt="Single Tray Zoomed In + Dimension Ratios">
+        </div>
+        <ul class="disc" type="disc">
+            <li><b>Pros: </b>Minimal paper wastage</li>
+            <li><b>Cons: </b>Folding and gluing process may be complicated</li>
+        </ul>
+
+        </p>
+
+<div class="navigation-bar-container">
+    <div class="navigation-bar">
+            <div class="nav-arrow left-arrow">
+                <a href="100bottle.html">&larr;</a>
+            </div>
+            <div class="nav-button">
+                <a href="project4.html">Back to <b>100 Days</b></a>
+            </div>
+            <div class="nav-arrow right-arrow">
+                <a href="100airpods.html">&rarr;</a>
+            </div>
+        </div>
+    </div>
+        
+
+</div>
+    <footer>
+        <div class="contact-links">
+            <!-- Contact links content -->
+            <a href="mailto:wantinggmao@gmail.com">wantinggmao.com@gmail.com</a>
+            <a href="tel:+15107080504">510.708.0504</a>
+        </div>
+    </footer>
+
+    <script>
+        // Get the progress circle element
+        const progressCircle = document.querySelector('.progress-circle');
+    
+        // Update the position of the circle based on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 95;
+            progressCircle.style.top = `${scrollPercentage}%`;
+        });
+    </script>
+</body>
+
+</html>

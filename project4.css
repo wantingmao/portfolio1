@@ -1,0 +1,292 @@
+header {
+    background-color: #fff;
+    color: #214ED3;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+header .navbar a.active{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background-color: #fff;
+    color: #214ED3;
+    position: relative;
+    height: 100vh; 
+
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 1vw;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-line {
+    width: 1px;
+    background-color: #214ED3;
+    flex: 1;
+}
+
+.progress-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff8f5;
+    border: 1px solid #214ED3; 
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+
+.instagram-section {
+    /* text-align: center; */
+    margin-top: 20px;
+    padding: 0px 20vw 20px 20vw;
+}
+.instagram-icon {
+    width: 30px;
+    margin-right: 7px;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: #214ED3;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+.instagram-link:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.viewallbtn {
+    text-align: center;
+    margin-top: 20px;
+    padding:10px;
+}
+
+.viewallbtn button {
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 13px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 3px rgba(33, 78, 211, 0.5);
+    color: #214ED3;
+    border-radius: 100px;
+    border: 2px solid #214ED3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.viewallbtn button:hover {
+    background-color: #214ED3;
+    color: #fff;
+    border: 2px solid #214ED3;
+}
+
+
+a {
+    text-decoration: none;
+}
+.mainimg-container{
+    background-color: #fff8f5;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 20vw 0 20vw;
+}
+
+.intro h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 70px 20vw 0 20vw;
+}
+h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 20px 20vw 0 20vw;
+}
+h2 {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+h3 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 0px 0px 20vw;
+    line-height: 1.5;
+
+}
+
+
+p {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    /* word-spacing: 0.7px; */
+    padding: 0px 20vw 0px 20vw;
+    margin: 10px 0px 10px 0px;
+}
+
+ol{
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 22vw;
+    margin: 30px 0px 0px 0px;
+
+}
+.bold-text-600 {
+    font-weight: 600;
+}
+
+b{
+    font-weight: 500;
+}
+
+ul.disc {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 22vw;
+    margin: 10px 0px 0px 0px;
+}
+
+ul.circle {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 27vw;
+    margin: 0px 0px 10px 0px;
+}
+
+.clickable-link {
+    color: #214ED3; /* Change to your desired link color */
+    text-decoration: underline;
+  }
+  
+  .clickable-link:hover {
+    color: #ff0000; /* Change to your desired link color on hover */
+    text-decoration: underline;
+  }
+
+/* In your project4.css or the appropriate CSS file */
+
+.iteration-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 15vw;
+}
+
+.page-link {
+    text-decoration: none;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    width: 30vw;
+    height: 30vw;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff8f5;
+    box-shadow: inset 5px 5px 6px rgba(253, 241, 236, 1);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.square img {
+    width: 80%;
+    height: auto;
+    margin: 30px 0px 0px 0px;
+}
+
+.square p {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 15px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.square:hover p {
+    color: #ff0000; /* Change text color to red on hover */
+}
+
+
+.square:hover {
+    transform: scale(1.03);
+    background-color: #fdf1ec;
+}
+
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px 30px 0px;
+}
+
+.contact-links a {
+    color: #214ED3;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+.contact-links a:hover{
+    color: #ff0000; /* Change to your desired link color on hover */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}

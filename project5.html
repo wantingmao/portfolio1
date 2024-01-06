@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project5.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100&family=Playfair+Display&display=swap:wght@100;200;300;400;500;600"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="navigation.css">
+    <title>100 Days of Product Ideation</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="progress-line"></div>
+        <div class="progress-circle"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="active">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1>Web and App UX</h1>
+    </div> 
+    <div class="mainimg-container">
+   <br>
+    <div class="img">
+        <img src="UIUX.png" alt="Tshirt Login thumbnail">
+    </div>
+    <br>
+
+    
+<br>
+</div>
+
+    <script src="script.js"></script>
+
+    <div class="process">
+        <h3>Desktop website and mobile app for claiming a free NYU T-Shirt</h3>
+        <div class="otherimgs">
+            <img src="login.png" alt="Tshirt Login thumbnail">
+        </div>
+        <p>
+        <h3>User Flow</h3>
+        <div class="otherimgs">
+            <img src="loginUF.png" alt="Tshirt Login User Flow">
+        </div>
+            <h3>Explore the Desktop Protoype Below</h3>
+            <div class="iframe-container">
+                <iframe 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvqmV3LNyyB0tMvlDxcZstJ%2FLogin%3Ftype%3Ddesign%26node-id%3D328-3344%26t%3DGXVJ78ZL0gw9gMIm-1%26scaling%3Dscale-down%26page-id%3D322%253A1644%26starting-point-node-id%3D328%253A3344%26mode%3Ddesign"
+            allowfullscreen></iframe>
+            </div>
+            <h3>Explore the Mobile Protoype Below</h3>
+            <div class="iframe-container">
+                <iframe 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvqmV3LNyyB0tMvlDxcZstJ%2FLogin%3Ftype%3Ddesign%26node-id%3D53-1132%26t%3DISOXc28KmX789efW-1%26scaling%3Dscale-down%26page-id%3D53%253A706%26starting-point-node-id%3D53%253A1132%26mode%3Ddesign"
+            allowfullscreen></iframe>
+            </div>
+        </p>
+
+        <h3>Mobile app for booking a pool lane</h3>
+        <div class="otherimgs">
+            <img src="swimlane.png" alt="Book Swim Lane thumbnail">
+        </div>
+        <br>
+        <p> Primary user flow for an app that allows members of the 
+            NYU community to book one of the 12 swim lanes at the 
+            Palladium Athletic Facility at a specific time.
+            </p>
+        <p>
+        <p><b>Site features include:</b></p>
+        <ul class="disc" type="disc">
+            <li>NYU gym member verification</li>
+            <li>User profile page</li>
+            <li>Pool hours information</li>
+            <li>Map/Directions</li>
+            <li>Pool rules</li>
+            <li>FAQs</li>
+            <li>Ability to see which lanes are available for a 
+                desired time, choose an available lane and book it</li>
+            <li>Receive Confirmation</li>
+        </ul>
+        <h3>User Flow</h3>
+        <div class="otherimgs">
+            <img src="swimlaneUF.png" alt="Swim Lane User Flow">
+        </div>
+        <h3>Explore the Mobile Protoype Below</h3>
+            <div class="iframe-container">
+                <iframe 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FATPlLoRDDGB4Lzj3oX2CGE%2FBook-a-Swim-Lane%3Fnode-id%3D2-2%26starting-point-node-id%3D2%253A2%26scaling%3Dscale-down%26mode%3Ddesign%26t%3D0I3klOIlNwrkcLqV-1" 
+            allowfullscreen></iframe>
+            </div>
+        
+        </p>
+
+
+</div>
+    <footer>
+        <div class="contact-links">
+            <!-- Contact links content -->
+            <a href="mailto:wantinggmao@gmail.com">wantinggmao.com@gmail.com</a>
+            <a href="tel:+15107080504">510.708.0504</a>
+        </div>
+    </footer>
+
+    <script>
+        // Get the progress circle element
+        const progressCircle = document.querySelector('.progress-circle');
+    
+        // Update the position of the circle based on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 95;
+            progressCircle.style.top = `${scrollPercentage}%`;
+        });
+    </script>
+</body>
+
+</html>

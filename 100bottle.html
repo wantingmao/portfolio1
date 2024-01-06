@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="100bottle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100&family=Playfair+Display&display=swap:wght@100;200;300;400;500;600"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="navigation.css">
+    <title>Two Beverage Water Bottle</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="progress-line"></div>
+        <div class="progress-circle"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="active">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1>Two Beverage Water Bottle</h1>
+    </div>
+    <div class="instagram-section">
+            <a href="https://www.instagram.com/aproduct.aday/" target="_blank" class="instagram-link">
+                <img src="igicon.png" alt="Instagram Icon" class="instagram-icon">
+                @aproduct.aday
+            </a>
+        </div>
+    <div class="mainimg-container">
+        <br>
+    <div class="img">
+        <img src="100/bottle3dmain.png" alt="Two Beverage Water Bottle">
+    </div>
+    <br>
+   
+</div>
+    <script src="script.js"></script>
+    <div class="process">
+        <p>
+            <h3>Environmental Impact of Single-Use Items</h3>
+            <p class="bold-text-600"><b>Single-use plastic water bottles</b></p>
+        <ul class="disc" type="disc">
+            <li>86% of disposable water bottles used in the 
+                United States become garbage or litter</li>
+            <li>38 billion disposable water bottles end up in U.S. landfills</li>
+            <li>The water bottling process releases 2.5 million tons of 
+                carbon dioxide into the atmosphere annually</li>
+        </ul>
+        <p class="bold-text-600"><b>Single-use coffee cups</b></p>
+        <ul class="disc" type="disc">
+            <li>16 billion paper cups are used for coffee every year</li>
+            <li>6.5 million trees cut down</li>
+            <li>4 billion gallons of water going to waste</li>
+            <li>Even though they’re paper cups, most of these cups 
+                cannot be recycled due to its inner polyethylene plastic 
+                film which is used to keep the coffee warm</li>
+        </ul>
+        </p>
+        <p>
+            <h3>The birth of reusable water bottles/travel mugs</h3>
+            
+            <div class="otherimgs">
+                <figure>
+                    <img src="100/marketbottles.png" alt="Reusable Bottles on the Market">
+                    <figcaption><i>Reusable Bottles on the Market</i></figcaption>
+                </figure>
+                </div>
+            <h3>These reusable alternatives have made such a positive 
+                environmental impact. What can I do to improve them?</h3>
+                <p class="bold-text-600"><b>Challenges posed by the 
+                    standard reusable water bottle:</b></p>
+                <ul class="disc" type="disc">
+                    <li>It can only hold one beverage at once.</li>
+                    <ul class="circle" type="circle">
+                        <li><i>"I Have a hot cup of coffee, but I’m thirsty for 
+                            some water."</i></li>
+                        <li>Because of this, users may go buy a plastic bottle 
+                            of water</li>
+                    </ul>
+                    <li>Waterbottles can be heavy which leads to reluctance in
+                         carrying around two reusable bottles for different beverages</li>        
+            </ul>
+
+        <h3>Ideation</h3>
+        <ul class="disc" type="disc">
+            <li>an insulated waterbottle that splits down the middle 
+                to hold two different beverages</li>
+        </ul>
+        <div class="otherimgs">
+            <img src="100/bottlesketch.jpg" alt="Bottle Sketch">
+        </div>
+
+        <h3>3d Model</h3>
+        <div class="otherimgs">
+            <figure>
+                <img src="100/bottle3ddetail.png" alt="Bottle 3D model">
+                <figcaption><i>Made in Shapr3D</i></figcaption>
+            </figure>
+        </div>
+        <p class="bold-text-600"><b>Pros</b></p>
+        <ul class="disc" type="disc">
+            <li>Can hold two beverages at once</li>
+            <li>Insulated walls for differing beverage temperatures</li>
+            <li>Clear lid to see which beverage you’re consuming</li>
+        </ul>
+        <p class="bold-text-600"><b>Potential Issues</b></p>
+        <ul class="disc" type="disc">
+            <li>A smaller sized bottle would be lighter and easier to 
+                carry around but liquids would also be less in quantity.</li>
+            <li>A larger sized bottle would allow higher liquid quantity 
+                but would increase the weight and lower the convenience of travel.</li>
+        </ul>
+
+        </p>
+
+<div class="navigation-bar-container">
+    <div class="navigation-bar">
+            <div class="nav-arrow left-arrow">
+                <a href="100airpods.html">&larr;</a>
+            </div>
+            <div class="nav-button">
+                <a href="project4.html">Back to <b>100 Days</b></a>
+            </div>
+            <div class="nav-arrow right-arrow">
+                <a href="100tray.html">&rarr;</a>
+            </div>
+        </div>
+    </div>
+        
+
+</div>
+    <footer>
+        <div class="contact-links">
+            <!-- Contact links content -->
+            <a href="mailto:wantinggmao@gmail.com">wantinggmao.com@gmail.com</a>
+            <a href="tel:+15107080504">510.708.0504</a>
+        </div>
+    </footer>
+
+    <script>
+        // Get the progress circle element
+        const progressCircle = document.querySelector('.progress-circle');
+    
+        // Update the position of the circle based on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 95;
+            progressCircle.style.top = `${scrollPercentage}%`;
+        });
+    </script>
+</body>
+
+</html>

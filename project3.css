@@ -1,0 +1,301 @@
+header {
+    background-color: #fff;
+    color: #214ED3;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+header .navbar a.active{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background-color: #fff;
+    color: #214ED3;
+    position: relative;
+    height: 100vh; 
+
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 1vw;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-line {
+    width: 1px;
+    background-color: #214ED3;
+    flex: 1;
+}
+
+.progress-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff8f5;
+    border: 1px solid #214ED3; 
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+
+.instagram-section {
+    /* text-align: center; */
+    margin-top: 20px;
+    padding: 0px 20vw 20px 20vw;
+}
+.instagram-icon {
+    width: 30px;
+    margin-right: 7px;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: #214ED3;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+.instagram-link:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.viewallbtn {
+    text-align: center;
+    margin-top: 20px;
+    padding:10px;
+}
+
+.viewallbtn button {
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 13px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 3px rgba(33, 78, 211, 0.5);
+    color: #214ED3;
+    border-radius: 100px;
+    border: 2px solid #214ED3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.viewallbtn button:hover {
+    background-color: #214ED3;
+    color: #fff;
+    border: 2px solid #214ED3;
+}
+.process .viewallbtn {
+    margin-top: 0; 
+    padding-top: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+.mainimg-container{
+    background-color: #fff8f5;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 15vw 0 15vw;
+}
+
+.intro h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 70px 20vw 0 20vw;
+}
+h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 20px 20vw 0 20vw;
+}
+h2 {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 20vw 0 20vw;
+    
+}
+
+h3 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 20px 0px 20vw;
+    line-height: 1.5;
+
+}
+.otherimgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.otherimgs:nth-of-type(1) img{
+    max-width: 100%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 10vw 5px 14vw;
+}
+
+.otherimgs:nth-of-type(2) img{
+    max-width: 100%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 5vw 0px 8vw;
+}
+
+.otherimgs:nth-of-type(3) img{
+    max-width: 100%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 15px 10vw 5px 13vw;
+}
+.otherimgs:nth-of-type(4) img{
+    max-width: 70%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px 20vw 5px 20vw;
+}
+
+.otherimgs:nth-of-type(5) img{
+    max-width: 80%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 20vw 5px 20vw;
+}
+
+
+.otherimgs figure {
+    text-align: center; /* Center the caption text */
+}
+.otherimgs figcaption {
+    margin-top: 0px; /* Adjust margin as needed */
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0px 20vw;
+}
+
+p {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    /* word-spacing: 0.7px; */
+    padding: 5px 20vw 0px 20vw;
+    margin: 0px;
+}
+
+ol{
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 22vw;
+    margin: 0px 0px 0px 0px;
+
+}
+.bold-text-600 {
+    font-weight: 600;
+}
+
+b{
+    font-weight: 500;
+}
+
+ul.disc {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 22vw;
+    margin: 10px 0px 10px 0px;
+}
+
+ul.circle {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 27vw;
+    margin: 0px 0px 10px 0px;
+}
+
+.iframe-container {
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+    width:65vw;
+    height:40vw;
+    margin: 0 auto;
+    padding: 10px 20vw 15px 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px 30px 0px;
+}
+
+.contact-links a {
+    color: #214ED3;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+.contact-links a:hover{
+    color: #ff0000; /* Change to your desired link color on hover */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}

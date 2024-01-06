@@ -1,0 +1,370 @@
+header {
+    background-color: #fff;
+    color: #214ED3;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+header .navbar a.active{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.navigation-bar-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.navigation-bar {
+    position: fixed;
+    bottom: 6vh;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff8f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the bar on the y-axis */
+    padding: 5px 50px 10px 50px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 150px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.navigation-bar:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.nav-arrow{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-button {
+    font-size: 15px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.nav-arrow a,
+.nav-button a {
+    text-decoration: none;
+    color: #214ED3;
+    transition: color 0.3s ease;
+}
+
+.nav-arrow:hover a,
+.nav-button:hover a {
+    color: #ff0000; /* Red text on hover */
+}
+
+.left-arrow {
+    margin-right: auto;
+}
+
+.right-arrow {
+    margin-left: auto;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background-color: #fff;
+    color: #214ED3;
+    position: relative;
+    height: 100vh; 
+
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 1vw;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-line {
+    width: 1px;
+    background-color: #214ED3;
+    flex: 1;
+}
+
+.progress-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff8f5;
+    border: 1px solid #214ED3; 
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+
+.instagram-section {
+    /* text-align: center; */
+    margin-top: 20px;
+    padding: 0px 20vw 20px 20vw;
+}
+.instagram-icon {
+    width: 30px;
+    margin-right: 7px;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: #214ED3;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+.instagram-link:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.viewallbtn {
+    text-align: center;
+    margin-top: 20px;
+    padding:10px;
+}
+
+.viewallbtn button {
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 3px rgba(33, 78, 211, 0.5);
+    color: #214ED3;
+    border-radius: 0px;
+    border: 2px solid #214ED3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.viewallbtn button:hover {
+    background-color: #214ED3;
+    color: #fff;
+    border: 2px solid #214ED3;
+}
+
+
+a {
+    text-decoration: none;
+}
+.mainimg-container{
+    background-color: #fff8f5;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 20vw 0 20vw;
+}
+
+.intro h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 70px 20vw 0 20vw;
+}
+h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 20px 20vw 0 20vw;
+}
+h2 {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 20vw 0 20vw;
+    
+}
+
+h3 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 20px 0px 20vw;
+    line-height: 1.5;
+
+}
+.otherimgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.otherimgs:nth-of-type(1) img{
+    max-width: 95%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 20vw 5px 23vw;
+}
+
+.otherimgs:nth-of-type(2) img{
+    max-width: 100%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 20vw 5px 20vw;
+}
+
+.otherimgs:nth-of-type(3) img{
+    max-width: 50%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 70%; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 0px 20vw 30px 20vw;
+}
+.otherimgs:nth-of-type(4) img{
+    max-width: 70%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px 20vw 5px 20vw;
+}
+
+.otherimgs:nth-of-type(5) img{
+    max-width: 80%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px 20vw 5px 20vw;
+}
+
+.otherimgs:nth-of-type(6) img{
+    max-width: 90%;
+    width: 100%; /* Set width to 100% to match the text width */
+    max-height: 100vh; /* Set maximum height to the viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 0px 20vw 20px 20vw;
+}
+
+
+
+.otherimgs figure {
+    text-align: center; /* Center the caption text */
+}
+.otherimgs figcaption {
+    margin-top: 0px; /* Adjust margin as needed */
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0px 20vw;
+}
+
+p {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    /* word-spacing: 0.7px; */
+    padding: 5px 20vw 0px 20vw;
+    margin: 0px;
+}
+
+ol{
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 22vw;
+    margin: 0px 0px 0px 0px;
+
+}
+.bold-text-600 {
+    font-weight: 600;
+}
+
+b{
+    font-weight: 500;
+}
+
+ul.disc {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 22vw;
+    margin: 10px 0px 10px 0px;
+}
+
+ul.circle {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 27vw;
+    margin: 0px 0px 10px 0px;
+}
+
+#figmaIframe {
+    border: none;
+    padding: 0px 20vw 0px 20vw;
+    margin: 0 auto;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+/* Additional styles for responsiveness */
+iframe {
+    width: 75%;
+    height: 80%;
+    border: none;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px 30px 0px;
+}
+
+.contact-links a {
+    color: #214ED3;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+.contact-links a:hover{
+    color: #ff0000; /* Change to your desired link color on hover */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}

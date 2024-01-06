@@ -1,0 +1,158 @@
+header {
+    background-color: #fff;
+    color: #214ED3;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+header .navbar a.active{
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background-color: #fff;
+    color: #214ED3;
+}
+
+a {
+    text-decoration: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 1vw;
+    width: 20px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-line {
+    width: 1px;
+    background-color: #214ED3; /* Adjust as needed */
+    flex: 1;
+}
+
+.progress-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff8f5; /* Filled color */
+    border: 1px solid #214ED3; /* Blue outline color */
+    border-radius: 50%;
+    margin-top: 10px; /* Adjust as needed */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+.img img{
+    display: block;
+    position: relative;
+    max-width: 70%; /* Set to 100% for responsiveness */
+    margin: auto; /* Center the image horizontally */
+}
+.mainimg-container{
+    background-color: #fff8f5;
+}
+
+.marketimgs img{
+    display: block;
+    position: relative;
+    max-width: 50%; /* Set to 100% for responsiveness */
+    margin: auto; /* Center the image horizontally */
+}
+
+.otherimgs img{
+    display: block;
+    position: relative;
+    max-width: 50%; /* Set to 100% for responsiveness */
+    margin: auto; /* Center the image horizontally */
+}
+
+
+h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 70px 20vw 0 20vw;
+}
+h2 {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0px 20vw 0px 20vw;
+    
+}
+
+h3 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 0px 0px 20vw;
+    line-height: 1.5;
+}
+
+h4 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 100;
+    padding: 20px 0px 0px 20vw;
+    line-height: 2;
+}
+
+
+
+p {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    /* word-spacing: 0.7px; */
+    padding: 0px 20vw 0px 20vw;
+    margin-bottom: 0px;
+}
+.indented-paragraph {
+    padding: 0px 20vw 0px 25vw;
+}
+
+ul {
+    color: #214ED3;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0px 20vw 0px 25vw;
+    margin: 0px 0px 0px 0px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px 30px 0px;
+}
+
+.contact-links a {
+    color: #214ED3;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+.contact-links a:hover{
+    color: #ff0000; /* Change to your desired link color on hover */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}

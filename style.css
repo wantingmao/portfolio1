@@ -1,0 +1,257 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #214ED3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 30px;
+    /* padding: 30px; */
+}
+
+header {
+    background-color: #fff;
+    color: #214ED3;
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+header .navbar a.active{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+h1::after {
+    content: "👋"; /* Add your waving emoji here */
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed */
+    transition: transform 0.4s ease-in-out; /* Smooth transition on hover */
+}
+
+h1:hover::after {
+    animation: wave 0.25s linear infinite; /* Continuous wave animation on hover */
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.profileillustration {
+    margin-right: auto;
+}
+
+.contactbtn {
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    padding: 13px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 3px rgba(33, 78, 211, 0.5);
+    color: #214ED3;
+    border-radius: 100px;
+    border: 2px solid #214ED3;
+    transition: background-color 0.3s ease;
+}
+
+.contactbtn:hover {
+    background-color: #214ED3;
+    color: #fff;
+    border: 2px solid #214ED3;
+}
+
+h1 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding: 50px 0px 0px 0px;
+}
+
+h3 {
+    color: #214ED3;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding: 0px;
+}
+
+.intro-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0px 0px 5px 0px;
+    line-height: 1.7;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: row; /* Change to column layout by default */
+    /* align-items: center; Center items horizontally in column layout */
+    /* justify-content: center; Center items vertically in column layout */
+    margin: 0px 20px 60px 20px;
+    height: 550px;
+    background-color: #fff8f5;
+    box-shadow: inset 5px 5px 6px rgba(253, 241, 236, 1);
+    padding: 0px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.project-section:hover {
+    background-color: #fdf1ec;
+    transform: scale(1.03);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #214ED3;
+}
+
+.project img {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px 0px 0px vw;
+    /* padding: 0px 0px 0px 20px; */
+}
+
+.project-info {
+    /* display: flex; */
+    max-width: 100%;
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+    /* flex-direction: column; Change to column layout by default */
+    /* align-items: left; */
+}
+.project-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.project-description {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    margin: 10px auto;
+}
+.projectbtn {
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    border-radius: 100px;
+    padding: 13px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 3px rgba(33, 78, 211, 0.5);
+    color: #214ED3;
+    border: 2px solid #214ED3;
+    transition: background-color 0.3s ease;
+}
+
+.projectbtn:hover {
+    background-color: #214ED3;
+    color: #fff;
+    border: 2px solid #214ED3;
+}
+
+
+/* Media query for larger screens - revert to row layout */
+@media screen and (min-width: 770px) {
+    .project-section {
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .project-section img {
+        flex-shrink: 0; /* Prevent image from shrinking */
+        width:90%;
+    padding-left: 3vw;
+    max-height: 520px;
+   
+        /* border: 1px solid rgb(255, 25, 0); */
+    }
+
+    .project-info {
+        /* flex-grow: 1; Allow the info section to take up remaining space */
+        width:45%; /* Adjust the width as needed */
+        text-align: left;
+        padding: 0px 0px 0px 10px;
+        margin: 0px 30px 0px 10px;
+        /* border: 1px solid rgb(255, 25, 0); */
+    }
+}
+
+/* Small screens - align info to the left */
+@media screen and (max-width: 769px) {
+    .project{
+        flex-direction: column;
+        align-items: flex-start; /* Align items vertically in the row */
+    }
+    .project-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center vertically */
+        margin: 10px auto;
+    }
+    .project-info {
+        text-align: left;
+        margin: 0px auto;
+   
+    }
+    .project img{
+        padding: 0px auto;
+        margin: 20px auto;
+        max-height: 330px;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px 30px 0px;
+}
+
+.contact-links a {
+    color: #214ED3;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+.contact-links a:hover{
+    color: #ff0000; 
+    text-decoration: underline;
+}

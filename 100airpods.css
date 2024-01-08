@@ -11,11 +11,12 @@ header .navbar a.active{
     text-decoration: underline;
 }
 
-.navigation-bar-container{
+.navigation-bar-container {
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
+
 .navigation-bar {
     position: fixed;
     bottom: 6vh;
@@ -24,7 +25,7 @@ header .navbar a.active{
     background-color: #fff8f5;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center the bar on the y-axis */
+    align-items: center;
     padding: 5px 50px 10px 50px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     border-radius: 150px;
@@ -33,16 +34,19 @@ header .navbar a.active{
 }
 
 .navigation-bar:hover {
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1;
 }
 
-.nav-arrow{
+.nav-arrow,
+.nav-button {
     font-size: 25px;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    position: relative; /* Add this line for relative positioning */
 }
+
 .nav-button {
     font-size: 15px;
     margin: 0;
@@ -58,17 +62,29 @@ header .navbar a.active{
 
 .nav-arrow:hover a,
 .nav-button:hover a {
-    color: #ff0000; /* Red text on hover */
+    color: #ff0000;
 }
 
-.left-arrow {
-    margin-right: auto;
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure tooltips appear above other content */
 }
 
-.right-arrow {
-    margin-left: auto;
+.nav-arrow:hover .tooltip {
+    display: block;
+    opacity: 1;
 }
-
 body {
     font-family: 'Barlow', sans-serif;
     font-weight: 300;

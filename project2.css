@@ -19,6 +19,80 @@ body {
     background-color: #fff;
     color: #214ED3;
 }
+.navigation-bar-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-bar {
+    position: fixed;
+    bottom: 6vh;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff8f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px 10px 50px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 150px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.navigation-bar:hover {
+    opacity: 1;
+}
+
+.nav-arrow,
+.nav-button {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Add this line for relative positioning */
+}
+
+.nav-button {
+    font-size: 15px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.nav-arrow a,
+.nav-button a {
+    text-decoration: none;
+    color: #214ED3;
+    transition: color 0.3s ease;
+}
+
+.nav-arrow:hover a,
+.nav-button:hover a {
+    color: #ff0000;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure tooltips appear above other content */
+}
+
+.nav-arrow:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
 
 a {
     text-decoration: none;

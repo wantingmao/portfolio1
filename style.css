@@ -13,7 +13,7 @@ a {
 
 .project-container {
     max-width: 1200px;
-    margin: 30px;
+    margin: 30px auto 30px auto;
     /* padding: 30px; */
 }
 

@@ -81,7 +81,7 @@ header .navbar a.active{
 iframe {
     max-width: 100%;
     width:80vw;
-    height:60vw;
+    height:45vw;
     margin: 40px auto;
     display: flex;
     align-items: center;

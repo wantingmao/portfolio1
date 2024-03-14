@@ -9,7 +9,7 @@
     margin-top: 0px; /* Adjust the margin as needed */
     margin-right: 0px;
    /* background: linear-gradient(180deg, rgba(255,248,245, 1) 5%, rgba(255,248,245, 0) 100%);
-    z-index: 1000; Set a higher z-index to ensure it's above other elements */
+    z-index: 1000; */
     width: 100%; /* Make it full-width */
     padding-right: 20px;
 }

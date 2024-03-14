@@ -106,7 +106,14 @@ ul.circle {
     padding: 0px 0vw 0px 5vw;
     margin: 0px 0px 10px 0px;
 }
+.resume {
+    text-decoration: underline; 
+ 
+}
 
+.resume:hover {
+    color:#ff0000;
+}
 .hobbies img{
     display: block;
     position: relative;
